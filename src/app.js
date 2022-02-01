@@ -28,7 +28,7 @@ app.use(
 app.use(express.json());
 
 app.get("/", (req, res, next) => {
-  res.send("Hi bro");
+  res.render("index");
 });
 
 /*

@@ -23,7 +23,43 @@
 </head>
 
 <body>
+    <div class="header">
+        <div class="header_logo-container">
+            <img src="" alt="ytmp3" class="header_logo">
+        </div>
+    </div>
 
+    <div class="main-container">
+        <form id="main-form" action="convert-to-mp3" method="post">
+            <h1 id="form-title">Yt to mp3 Downloader</h1>
+            <h3 class="form-id-mssg">Insert the Video ID</h3>
+            <div class="input-container">
+                <input type="text" name="ID" id="input-id" placeholder="Video ID Here!">
+                <button id="send-id" class="btn">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="aux-container">
+        <% if(typeof success !="undefined" && success){ %>
+            <div class="success">
+                <p>
+                    <%= song_name %>
+                </p>
+                <a href="<%= song_link %>"><button id="download" class="btn">Download</button></a>
+            </div>
+            <& }else if(typeof success !="undefined" && !success) {%>
+                <div class="errors">
+                    <p>
+                        <%=error_mssg%>
+                    </p>
+                </div>
+                <% } %>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-text"><span class="author">WMYM</span> ytmp3</div>
+    </footer>
 </body>
 
 </html>
