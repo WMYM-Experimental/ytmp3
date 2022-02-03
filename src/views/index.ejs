@@ -13,8 +13,7 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- favicon -->
@@ -24,16 +23,18 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="header_logo-container">
-            <img src="" alt="ytmp3" class="header_logo">
+    <div class="header flex-centering">
+        <div class="header_logo-container flex-centering">
+            <span class="material-icons header_logo flex-centering">
+                play_circle_filled
+            </span>
         </div>
     </div>
 
     <div class="main-container flex-centering">
         <form id="main-form" class="flex-centering" action="convert-to-mp3" method="post">
             <h1 id="form-title">Yt to .mp3 </h1>
-            <h3 class="form-id-mssg">Insert the Video ID</h3>
+            <h5 class="form-id-mssg">Search your Video ID</h5>
             <div id="input-container" class="flex-centering">
                 <input type="text" name="ID" id="input-id" placeholder="Video ID Here!">
                 <button id="send-id" class="send btn"> <span class="material-icons arrow">arrow_forward_ios</span>
@@ -59,7 +60,7 @@
                 <% } %>
     </div>
 
-    <footer class="footer">
+    <footer class="footer flex-centering">
         <div class="footer-text"><span class="author">WMYM</span> ytmp3</div>
     </footer>
 </body>
