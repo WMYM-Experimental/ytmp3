@@ -13,7 +13,8 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
     <!-- google icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- favicon -->
@@ -29,13 +30,14 @@
         </div>
     </div>
 
-    <div class="main-container">
-        <form id="main-form" action="convert-to-mp3" method="post">
-            <h1 id="form-title">Yt to mp3 Downloader</h1>
+    <div class="main-container flex-centering">
+        <form id="main-form" class="flex-centering" action="convert-to-mp3" method="post">
+            <h1 id="form-title">Yt to .mp3 </h1>
             <h3 class="form-id-mssg">Insert the Video ID</h3>
-            <div class="input-container">
+            <div id="input-container" class="flex-centering">
                 <input type="text" name="ID" id="input-id" placeholder="Video ID Here!">
-                <button id="send-id" class="btn">Send</button>
+                <button id="send-id" class="send btn"> <span class="material-icons arrow">arrow_forward_ios</span>
+                </button>
             </div>
         </form>
     </div>
