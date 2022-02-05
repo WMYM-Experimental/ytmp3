@@ -30,7 +30,7 @@
     </div>
 
     <div class="main-container flex-centering">
-        <form id="main-form" class="flex-centering" action="convert-to-mp3" method="post">
+        <form id="main-form" class="flex-centering" action="/convert-to-mp3" method="post">
             <h1 id="form-title">Yt to .mp3 </h1>
             <h5 class="form-id-mssg">Search your Video ID</h5>
             <div id="input-container" class="flex-centering">
@@ -52,7 +52,7 @@
             <& }else if(typeof success !="undefined" && !success) {%>
                 <div class="errors">
                     <p>
-                        <%=error_mssg%>
+                        <%=mssg%>
                     </p>
                 </div>
                 <% } %>

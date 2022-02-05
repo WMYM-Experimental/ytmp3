@@ -25,17 +25,25 @@ app.use(
     extended: true,
   })
 );
+
 app.use(express.json());
 
 app.get("/", (req, res, next) => {
   res.render("index");
 });
 
-/*
-app.get("/", (req, res, next) => {
-
+app.post("/convert-to-mp3", async (req, res, next) => {
+  const videoID = req.body.ID;
+  if (videoID === undefined || videoID === "" || videoID === null) {
+    return res.render(path.join(__dirname, "views/index"), {
+      success: false,
+      mssg: "Please insert a valid Video ID",
+      // TODO: Print Error in index
+    });
+  } else {
+    console.log(videoID);
+  }
 });
-*/
 
 /*
 ################## SERVER LISTENING ##################
