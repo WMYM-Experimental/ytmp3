@@ -20,16 +20,12 @@
   background-color: #ff1b1c;
 }
 .header_logo-container {
-  height: 100px;
-  width: 100px;
+  background-color: #ff1b1c;
+  font-size: 4.5rem;
+  transition: 0.8s ease-in-out;
 }
-.header_logo {
-  background: green;
-  height: 100px;
-  width: 100px;
-  font-size: 1rem;
-  align-items: center;
-  text-align: center;
+.header_logo-container:hover {
+  letter-spacing: 5px;
 }
 /* #################### MAIN CONTENT #################### */
 .main-container {
@@ -44,6 +40,10 @@
   padding: 30px;
   background-color: #ff1b1c;
   border-radius: 15%;
+  transition: 1.2s ease;
+}
+#form-title:hover {
+  margin-left: 20px;
 }
 .form-id-mssg {
   padding: 10px;
@@ -81,6 +81,9 @@
   vertical-align: middle;
   border-bottom: 1px #b7b7a4 solid;
   opacity: 0.5;
+}
+#input-id:focus {
+  border-bottom: 2px #f1f1f1 solid;
 }
 /* #################### FOOTER #################### */
 .footer {
